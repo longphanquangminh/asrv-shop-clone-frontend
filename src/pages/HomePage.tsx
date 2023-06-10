@@ -16,7 +16,7 @@ function HomePage() {
         'https://asrv.com/cdn/shop/files/Summer-Banner-Mobile.jpg',
       mainTitle: "SUMMER '23 COLLECTION",
       productListTitle: 'CORE COLLECTION',
-      subTitle: '2023-06-12T20:30:00',
+      subTitle: '2023-06-12T08:00:00',
       firstButton: 'SHOP NOW',
       secondButton: null,
     },
