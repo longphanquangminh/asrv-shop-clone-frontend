@@ -100,24 +100,28 @@ function HomePage() {
             adText="TOPS"
             buttonText="explore"
             className="mt-2 mb-2 lg:mx-1"
-            link={`/collections/${
-              collections
-                .find((item: Collection) => item.type === 'TOPS')
-                ?.name.replace(/\W+/gi, '-')
-                .toLowerCase() || '/'
-            }`}
+            link={
+              collections.find((item: Collection) => item.type === 'TOPS')
+                ? collections
+                    .find((item: Collection) => item.type === 'TOPS')!
+                    .name.replace(/\W+/gi, '-')
+                    .toLowerCase()
+                : `/`
+            }
           />
           <Advertisement
             srcImg="https://asrv.com/cdn/shop/files/omar_cycle.png"
             adText="BOTTOMS"
             buttonText="explore"
             className="mb-2 lg:mx-1 lg:mt-2"
-            link={`/collections/${
-              collections
-                .find((item: Collection) => item.type === 'BOTTOMS')
-                ?.name.replace(/\W+/gi, '-')
-                .toLowerCase() || '/'
-            }`}
+            link={
+              collections.find((item: Collection) => item.type === 'BOTTOMS')
+                ? collections
+                    .find((item: Collection) => item.type === 'BOTTOMS')!
+                    .name.replace(/\W+/gi, '-')
+                    .toLowerCase()
+                : `/`
+            }
           />
         </div>
       </div>
