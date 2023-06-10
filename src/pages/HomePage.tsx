@@ -11,13 +11,13 @@ function HomePage() {
   const data = [
     {
       id: 1,
-      src: 'https://asrv.com/cdn/shop/files/App-download.png',
+      src: 'https://asrv.com/cdn/shop/files/Summer-Banner.jpg',
       srcSmallScreen:
-        'https://asrv.com/cdn/shop/files/VOFJersey_0003_VOFJersey-2_474cde4c-606e-4013-8ca4-4d9bd69a3d44.jpg',
-      mainTitle: 'PRE-SUMMER DROP',
+        'https://asrv.com/cdn/shop/files/Summer-Banner-Mobile.jpg',
+      mainTitle: "SUMMER '23 COLLECTION",
       productListTitle: 'CORE COLLECTION',
-      subTitle: 'LIMITED STOCK - ONLY ON THE APP',
-      firstButton: null,
+      subTitle: '2023-06-12T20:30:00',
+      firstButton: 'SHOP NOW',
       secondButton: null,
     },
     {

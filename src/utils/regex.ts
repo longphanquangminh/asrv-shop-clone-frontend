@@ -5,3 +5,4 @@ export const streetRegex = /^[A-Za-z0-9]+(?:\s[A-Za-z0-9]+)*$/;
 export const cityRegex = /^[A-Za-z]+(?:\s[A-Za-z]+)*$/;
 export const phoneRegex = /^[0-9]{10}$/;
 export const collectionNameRegex = /^[A-Za-z0-9]+(?:\s[A-Za-z0-9]+)*$/;
+export const dateTimeRegex = /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}$/;
