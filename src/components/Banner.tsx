@@ -10,7 +10,7 @@ function Banner(props: Props) {
   const smallScreenClassName = 'block md:hidden';
   const bannerClassName = `-z-10 ${
     props.bannerKey == 0 && !hasSale ? `h-screen` : `h-[calc(100vh-64px)]`
-  } w-full object-cover brightness-[.80]`;
+  } w-full object-cover brightness-90`;
   return (
     <>
       {props.src.split('.').pop() == 'mp4' ? (
