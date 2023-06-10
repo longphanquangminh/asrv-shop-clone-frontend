@@ -74,25 +74,25 @@ export default function Cover(props: Props) {
             <div className="grid w-fit grid-cols-4 place-items-center gap-3 pb-3 text-center font-light uppercase tracking-widest text-white md:place-items-start">
               <div className="grid grid-cols-1 gap-3">
                 <div className="text-4xl font-bold">
-                  {days < 10 ? '0' + days : days}
+                  {days < 10 ? '0' + `${days < 0 ? '0' : days}` : days}
                 </div>
                 <div className="text-xs">DAYS</div>
               </div>
               <div className="grid grid-cols-1 gap-3">
                 <div className="text-4xl font-bold">
-                  {hours < 10 ? '0' + hours : hours}
+                  {hours < 10 ? '0' + `${hours < 0 ? '0' : hours}` : hours}
                 </div>
                 <div className="text-xs">HOURS</div>
               </div>
               <div className="grid grid-cols-1 gap-3">
                 <div className="text-4xl font-bold">
-                  {minutes < 10 ? '0' + minutes : minutes}
+                  {minutes < 10 ? '0' + `${minutes < 0 ? '0' : minutes}` : minutes}
                 </div>
                 <div className="text-xs">MINUTES</div>
               </div>
               <div className="grid grid-cols-1 gap-3 pl-2">
                 <div className="text-4xl font-bold">
-                  {seconds < 10 ? '0' + seconds : seconds}
+                  {seconds < 10 ? '0' + `${seconds < 0 ? '0' : seconds}` : seconds}
                 </div>
                 <div className="text-xs">SECONDS</div>
               </div>
