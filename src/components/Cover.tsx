@@ -90,7 +90,7 @@ export default function Cover(props: Props) {
                 </div>
                 <div className="text-xs">MINUTES</div>
               </div>
-              <div className="grid grid-cols-1 gap-3">
+              <div className="grid grid-cols-1 gap-3 pl-2">
                 <div className="text-4xl font-bold">
                   {seconds < 10 ? '0' + seconds : seconds}
                 </div>
