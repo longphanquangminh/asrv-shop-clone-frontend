@@ -36,6 +36,9 @@ function NavbarRight(props: Props) {
       props.onClick();
     }
   };
+  const isAuth = useSelector(
+    (state: RootState) => state.account.isAuthenticated,
+  );
   return (
     <>
       <ul
@@ -85,7 +88,7 @@ function NavbarRight(props: Props) {
         } ${props.changeColor ? `text-neutral-600` : `text-white`}`}
       >
         <li className="capitalize">
-          <Link to="/account">account</Link>
+          <Link to="/account">{isAuth ? 'account' : 'login'}</Link>
         </li>
         <li
           className="navbar-list capitalize hover:cursor-pointer"
