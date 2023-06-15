@@ -34,4 +34,4 @@ This article is supported by [ChatGPT](https://openai.com/).
 
 ##
 
-SHOP-API repo: [Link](https://asrv-shop-clone-api-collab).
+SHOP-API repo: [Link](https://github.com/longphanquangminh/asrv-shop-clone-api-collab).
