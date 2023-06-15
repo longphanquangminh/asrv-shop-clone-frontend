@@ -23,7 +23,6 @@ type Props = {
 
 export default function Cover(props: Props) {
   const [products, setProducts] = useState<Product[]>([]);
-  const [dateTime, setDateTime] = useState<Date>();
   const collections = useSelector(
     (state: RootState) => state.collection.collections,
   );
@@ -86,13 +85,17 @@ export default function Cover(props: Props) {
               </div>
               <div className="grid grid-cols-1 gap-3">
                 <div className="text-4xl font-bold">
-                  {minutes < 10 ? '0' + `${minutes < 0 ? '0' : minutes}` : minutes}
+                  {minutes < 10
+                    ? '0' + `${minutes < 0 ? '0' : minutes}`
+                    : minutes}
                 </div>
                 <div className="text-xs">MINUTES</div>
               </div>
               <div className="grid grid-cols-1 gap-3 pl-2">
                 <div className="text-4xl font-bold">
-                  {seconds < 10 ? '0' + `${seconds < 0 ? '0' : seconds}` : seconds}
+                  {seconds < 10
+                    ? '0' + `${seconds < 0 ? '0' : seconds}`
+                    : seconds}
                 </div>
                 <div className="text-xs">SECONDS</div>
               </div>
