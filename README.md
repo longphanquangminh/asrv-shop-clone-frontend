@@ -31,3 +31,7 @@ Start exploring our online store today and elevate your wardrobe with the latest
 ##
 
 This article is supported by [ChatGPT](https://openai.com/).
+
+##
+
+SHOP-API: [Link](https://asrv-shop-clone-api-collab).
